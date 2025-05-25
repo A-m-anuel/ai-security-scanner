@@ -1,0 +1,74 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "21e377a2-80c8-4a25-a831-cd312a893796",
+      "type": "Hardcoded Password",
+      "title": "Hardcoded Password",
+      "description": "Hardcoded password or secret detected",
+      "severity": "High",
+      "confidence": 0.85,
+      "owasp_category": "A07:2021 - Identification and Authentication Failures",
+      "cwe_id": "CWE-798",
+      "location": {
+        "file_path": "examples\\vulnerable_python.py",
+        "line_number": 21,
+        "column": null,
+        "line_content": "API_KEY = \"sk-1234567890abcdef\""
+      },
+      "vulnerable_code": "API_KEY = \"sk-1234567890abcdef\"",
+      "attack_vector": null,
+      "business_impact": null,
+      "remediation": "Use environment variables, secure vaults, or configuration management",
+      "fix_suggestion": null,
+      "references": [],
+      "detected_by": "pattern"
+    },
+    {
+      "id": "b5ddefbf-ecf5-4c66-b3e6-b06c7eab7231",
+      "type": "Hardcoded Password",
+      "title": "Hardcoded Password",
+      "description": "Hardcoded password or secret detected",
+      "severity": "High",
+      "confidence": 0.85,
+      "owasp_category": "A07:2021 - Identification and Authentication Failures",
+      "cwe_id": "CWE-798",
+      "location": {
+        "file_path": "examples\\vulnerable_python.py",
+        "line_number": 22,
+        "column": null,
+        "line_content": "DATABASE_PASSWORD = \"admin123\""
+      },
+      "vulnerable_code": "DATABASE_PASSWORD = \"admin123\"",
+      "attack_vector": null,
+      "business_impact": null,
+      "remediation": "Use environment variables, secure vaults, or configuration management",
+      "fix_suggestion": null,
+      "references": [],
+      "detected_by": "pattern"
+    },
+    {
+      "id": "64e0580f-5a92-449d-92d6-280629777436",
+      "type": "Insecure Deserialization",
+      "title": "Insecure Deserialization",
+      "description": "Insecure deserialization using pickle",
+      "severity": "High",
+      "confidence": 0.85,
+      "owasp_category": "A08:2021 - Software and Data Integrity Failures",
+      "cwe_id": "CWE-502",
+      "location": {
+        "file_path": "examples\\vulnerable_python.py",
+        "line_number": 26,
+        "column": null,
+        "line_content": "return pickle.loads(data)"
+      },
+      "vulnerable_code": "return pickle.loads(data)",
+      "attack_vector": null,
+      "business_impact": null,
+      "remediation": "Validate serialized data, use safe formats, implement integrity checks",
+      "fix_suggestion": null,
+      "references": [],
+      "detected_by": "pattern"
+    }
+  ],
+  "model": "pattern-detection"
+}

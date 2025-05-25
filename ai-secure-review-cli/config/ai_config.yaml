@@ -1,0 +1,45 @@
+ai_providers:
+  huggingface:
+    api_key:  '${HUGGINGFACE_API_KEY}'
+    base_url: "https://api-inference.huggingface.co/models/"
+    code_model: "microsoft/CodeBERT-base"
+    text_model: "microsoft/DialoGPT-large"
+    rate_limit: 30
+    timeout: 30
+
+analysis_settings:
+  chunk_size: 500
+  overlap: 25
+  confidence_threshold: 0.6
+  max_concurrent_requests: 2
+  enable_caching: true
+  cache_duration: 3600
+
+supported_languages:
+  - python
+  - go
+  - java
+  - csharp
+
+security_profiles:
+  strict:
+    min_severity: "Low"
+    include_potential_issues: true
+  standard:
+    min_severity: "Medium"
+    include_potential_issues: true
+  production:
+    min_severity: "High"
+    include_potential_issues: false
+
+owasp_categories:
+  A01: "Broken Access Control"
+  A02: "Cryptographic Failures"
+  A03: "Injection"
+  A04: "Insecure Design"
+  A05: "Security Misconfiguration"
+  A06: "Vulnerable and Outdated Components"
+  A07: "Identification and Authentication Failures"
+  A08: "Software and Data Integrity Failures"
+  A09: "Security Logging and Monitoring Failures"
+  A10: "Server-Side Request Forgery"

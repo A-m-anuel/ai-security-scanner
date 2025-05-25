@@ -1,0 +1,74 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "ae1ac557-1cce-45ab-b565-ede9aed620f0",
+      "type": "Command Injection",
+      "title": "Command Injection",
+      "description": "Command injection through exec.Command",
+      "severity": "High",
+      "confidence": 0.85,
+      "owasp_category": "A03:2021 - Injection",
+      "cwe_id": "CWE-78",
+      "location": {
+        "file_path": "examples\\vulnerable_go.go",
+        "line_number": 30,
+        "column": null,
+        "line_content": "cmd := exec.Command(\"sh\", \"-c\", \"ls \"+userInput)"
+      },
+      "vulnerable_code": "cmd := exec.Command(\"sh\", \"-c\", \"ls \"+userInput)",
+      "attack_vector": null,
+      "business_impact": "May allow attackers to execute arbitrary commands on the server",
+      "remediation": "Sanitize user input, use safe APIs, avoid shell execution when possible",
+      "fix_suggestion": null,
+      "references": [],
+      "detected_by": "pattern"
+    },
+    {
+      "id": "71ff9738-d281-48bf-87ce-b3911f3d1458",
+      "type": "Hardcoded Credentials",
+      "title": "Hardcoded Credentials",
+      "description": "Hardcoded credentials detected",
+      "severity": "High",
+      "confidence": 0.85,
+      "owasp_category": "A07:2021 - Identification and Authentication Failures",
+      "cwe_id": "CWE-798",
+      "location": {
+        "file_path": "examples\\vulnerable_go.go",
+        "line_number": 36,
+        "column": null,
+        "line_content": "APIKey = \"sk-1234567890abcdef\""
+      },
+      "vulnerable_code": "APIKey = \"sk-1234567890abcdef\"",
+      "attack_vector": null,
+      "business_impact": "Could impact application security and data integrity",
+      "remediation": "Follow security best practices for this vulnerability type",
+      "fix_suggestion": null,
+      "references": [],
+      "detected_by": "pattern"
+    },
+    {
+      "id": "9b46a81b-f5c8-4523-8aa6-ce619fadc5a6",
+      "type": "Hardcoded Credentials",
+      "title": "Hardcoded Credentials",
+      "description": "Hardcoded credentials detected",
+      "severity": "High",
+      "confidence": 0.85,
+      "owasp_category": "A07:2021 - Identification and Authentication Failures",
+      "cwe_id": "CWE-798",
+      "location": {
+        "file_path": "examples\\vulnerable_go.go",
+        "line_number": 37,
+        "column": null,
+        "line_content": "DBPassword = \"admin123\""
+      },
+      "vulnerable_code": "DBPassword = \"admin123\"",
+      "attack_vector": null,
+      "business_impact": "Could impact application security and data integrity",
+      "remediation": "Follow security best practices for this vulnerability type",
+      "fix_suggestion": null,
+      "references": [],
+      "detected_by": "pattern"
+    }
+  ],
+  "model": "microsoft/CodeBERT-base"
+}
