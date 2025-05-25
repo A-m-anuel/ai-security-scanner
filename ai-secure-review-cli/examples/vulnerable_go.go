@@ -1,9 +1,3 @@
-
-
-# ============================================
-# examples/vulnerable_go.go - Test file  
-# ============================================
-"""
 package main
 
 import (
@@ -45,4 +39,3 @@ func readFile(filename string) ([]byte, error) {
 func main() {
     fmt.Println("Vulnerable Go application")
 }
-"""

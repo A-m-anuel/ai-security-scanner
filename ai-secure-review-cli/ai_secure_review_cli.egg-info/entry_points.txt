@@ -1,3 +1,0 @@
-[console_scripts]
-ai-secure-review = cli:cli
-secure-scan = cli:cli

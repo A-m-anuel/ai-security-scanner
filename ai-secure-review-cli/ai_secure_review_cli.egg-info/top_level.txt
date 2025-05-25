@@ -1,7 +1,0 @@
-ai_models
-config
-core
-parsers
-reports
-rules
-utils

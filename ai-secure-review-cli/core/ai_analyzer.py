@@ -1,18 +1,18 @@
-# core/ai_analyzer.py - Simple working version
+# core/ai_analyzer.py - FIXED VERSION
 import asyncio
 from typing import List, Dict, Any, Optional
 from core.models import Vulnerability, CodeContext
 from ai_models.model_interface import AIModelInterface
 
 class AIAnalyzer:
-    """Main AI-powered code analyzer - simplified working version"""
+    """Main AI-powered code analyzer - FIXED VERSION"""
     
     def __init__(self, config: Dict[str, Any], provider: str = 'huggingface', 
                  model: Optional[str] = None, pattern_only: bool = False):
         self.config = config
         self.provider = provider
         self.pattern_only = pattern_only
-        self.model_name = model or config['ai_providers'][provider].get('code_model', 'microsoft/CodeBERT-base')
+        self.model_name = model or config['ai_providers'][provider].get('code_model', 'microsoft/codebert-base')
         
         # Initialize AI model
         self.ai_model = self._create_ai_model(provider, config['ai_providers'][provider], pattern_only)

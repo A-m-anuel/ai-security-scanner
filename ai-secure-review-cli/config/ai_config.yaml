@@ -4,7 +4,7 @@ ai_providers:
     base_url: "https://api-inference.huggingface.co/models/"
     code_model: "microsoft/CodeBERT-base"
     text_model: "microsoft/DialoGPT-large"
-    rate_limit: 30
+    rate_limit: 30  
     timeout: 30
 
 analysis_settings:
