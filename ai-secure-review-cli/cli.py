@@ -351,7 +351,7 @@ async def run_analysis(path: str, config: dict, exclude_patterns: List[str], pat
     return scan_result
 
 async def analyze_single_file(file_path: str, analyzer, progress, task_id):
-    """Analyze a single file - SIMPLIFIED"""
+    """Analyze a single file - """
     
     from core.models import AnalysisResult
     from parsers.parser_factory import ParserFactory
@@ -392,9 +392,18 @@ async def analyze_single_file(file_path: str, analyzer, progress, task_id):
         )
         
         progress.advance(task_id)
+             
+        if hasattr(analyzer, 'ai_model') and hasattr(analyzer.ai_model, 'session'):
+            if analyzer.ai_model.session and not analyzer.ai_model.session.closed:
+                await analyzer.ai_model.session.close()
+                analyzer.ai_model.session = None
+        
+        progress.advance(task_id)
         return result
         
     except Exception as e:
+        
+  
         console.print(f"[red]Error analyzing {file_path}: {e}[/red]")
         progress.advance(task_id)
         return None
