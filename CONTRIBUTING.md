@@ -22,6 +22,7 @@ Development Setup
 
 Clone your fork
    - git clone https://github.com/A-m-anuel/ai-security-scanner.git
+   - cd ai-security-scanner
    - cd ai-secure-review-cli
 
 Create virtual environment
