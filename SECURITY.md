@@ -2,15 +2,15 @@ Security Policy
 
 Supported Versions
 
-    Only the latest stable release is actively supported with security updates.
+ Only the latest stable release is actively supported with security updates.
 
 Reporting a Vulnerability
 
-    If you discover a security vulnerability, **please do not create a public issue**.
+ If you discover a security vulnerability, please do not create a public issue.
 
 Instead, report it responsibly by emailing:
 
-    craftsoftware7@gmail.com
+ craftsoftware7@gmail.com
 
 Include as much detail as possible:
 - Description of the vulnerability
