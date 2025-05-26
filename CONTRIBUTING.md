@@ -1,5 +1,4 @@
-First off, thank you for considering contributing to AI Secure Code Review CLI!
-
+Thank you for considering contributing to AI Secure Code Review CLI!
 
 Reporting Bugs
 - Use the issue tracker to report bugs
@@ -23,15 +22,15 @@ Development Setup
 
 
 Clone your fork
-    git clone https://github.com/your-username/ai-secure-review-cli.git
-    cd ai-secure-review-cli
+    - git clone https://github.com/A-m-anuel/ai-security-scanner.git
+    - cd ai-secure-review-cli
 
 Create virtual environment
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    - python -m venv venv
+    - source venv/bin/activate  | On Windows: venv\Scripts\activate
     
 Install in development mode
-    pip install -e .
-    pip install -r requirements.txt
+   - pip install -e .
+   - pip install -r requirements.txt
 
 

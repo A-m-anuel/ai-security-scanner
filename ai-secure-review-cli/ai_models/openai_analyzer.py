@@ -1,5 +1,3 @@
-
-# ai_models/openai_analyzer.py
 import openai
 import asyncio
 import json

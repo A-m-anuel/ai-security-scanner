@@ -36,9 +36,9 @@ Detects a wide range of critical security issues, including:
 Installation
 
 
-git clone https://github.com/yourusername/ai-secure-review-cli.git
-cd ai-secure-review-cli
-pip install -e .
+- git clone https://github.com/A-m-anuel/ai-security-scanner.git
+- cd ai-secure-review-cli
+- pip install -e .
 
 Get Your API Key (Free)
 
