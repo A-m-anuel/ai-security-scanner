@@ -5,9 +5,8 @@ Why AI Secure Review CLI?
 Traditional static analysis tools often miss complex security vulnerabilities and produce high false-positive rates. 
 AI Secure Review CLI combines pattern-based detection with advanced AI models to provide:
 
-- 95% accuracy in vulnerability detection
 - Context-aware analysis that understands your code's intent
-- 10x faster performance than manual code reviews
+- Fast and efficient alternative to manual code reviews
 - Intelligent fix suggestions powered by AI
 - Multi-line vulnerability detection (e.g., complex SSTI or injection chains)
 
@@ -38,6 +37,7 @@ Installation
 
 - git clone https://github.com/A-m-anuel/ai-security-scanner.git
 - cd ai-secure-review-cli
+- pip install -r requirements.txt
 - pip install -e .
 
 Get Your API Key (Free)
