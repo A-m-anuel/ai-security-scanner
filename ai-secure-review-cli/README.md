@@ -1,62 +1,53 @@
-🔒 AI-Powered Secure Code Review CLI 
+AI-Powered Secure Code Review CLI
 
 Why AI Secure Review CLI?
-Traditional static analysis tools often miss complex security vulnerabilities and produce high false-positive rates. AI Secure Review CLI combines pattern-based detection with advanced AI models to provide:
 
-📊 95% accuracy in vulnerability detection
-🎯 Context-aware analysis that understands your code's intent
-🚀 10x faster than manual code reviews
-💡 Intelligent fix suggestions powered by AI
-🔍 Multi-line vulnerability detection (catches complex SSTI, injection chains)
+Traditional static analysis tools often miss complex security vulnerabilities and produce high false-positive rates. 
+AI Secure Review CLI combines pattern-based detection with advanced AI models to provide:
 
-🌟 Core Capabilities
+- 95% accuracy in vulnerability detection
+- Context-aware analysis that understands your code's intent
+- 10x faster performance than manual code reviews
+- Intelligent fix suggestions powered by AI
+- Multi-line vulnerability detection (e.g., complex SSTI or injection chains)
 
-🤖 AI-Powered Analysis: Leverages Hugging Face's state-of-the-art models for deep code understanding
-📝 Multi-Language Support: Python, Go, Java, C# with more coming soon
-🛡️ OWASP Top 10 Mapping: Automatically categorizes vulnerabilities according to industry standards
-💻 Offline Mode: Pattern-based detection works without internet connection
-🎨 Beautiful Reports: Generate reports in JSON, HTML, Markdown, or rich console output
+Core Capabilities
 
-🔍 Advanced Detection
+- AI-Powered Analysis: Utilizes Hugging Face's state-of-the-art models for deep code understanding
+- Multi-Language Support: Supports Python, Go, Java, and C# (more coming soon)
+- OWASP Top 10 Mapping: Automatically categorizes vulnerabilities according to industry standards
+- Offline Mode: Pattern-based detection functions without an internet connection
+- Flexible Report Generation: Output in JSON, HTML, Markdown, or rich console format
 
-SQL Injection - Including complex multi-statement attacks
-Command Injection - OS command execution vulnerabilities
-Server-Side Template Injection (SSTI) - Including multi-line Flask/Jinja2 vulnerabilities
-Path Traversal - Directory traversal and file inclusion
-Hardcoded Secrets - API keys, passwords, tokens
-Insecure Deserialization - Pickle, YAML, JSON vulnerabilities
-Weak Cryptography - Outdated algorithms and poor practices
-And many more...
 
-🎯 Unique Features
+Advanced Detection 
 
-Precise Line Detection: Pinpoints exact line numbers and columns
-Multi-line Analysis: Tracks tainted variables across multiple lines
-Framework Detection: Automatically identifies Django, Flask, Spring, etc.
-Fix Suggestions: AI-generated remediation code
-CI/CD Ready: Exit codes for pipeline integration
+Detects a wide range of critical security issues, including:
+
+- SQL Injection – including multi-statement attacks
+- Command Injection – OS command execution vulnerabilities
+- Server-Side Template Injection (SSTI) – including multi-line Flask/Jinja2 cases
+- Path Traversal – directory traversal and file inclusion
+- Hardcoded Secrets – API keys, passwords, and tokens
+- Insecure Deserialization – vulnerabilities in Pickle, YAML, and JSON
+- Weak Cryptography – detection of outdated or poorly implemented crypto
+
 
 Installation
 
-install from source
+
 git clone https://github.com/yourusername/ai-secure-review-cli.git
 cd ai-secure-review-cli
 pip install -e .
 
-
 Get Your API Key (Free)
 
-- Visit Hugging Face and create a free account
-- Go to Settings → Access Tokens
-- Create a new token with read permissions
-
-Setup & First Scan
-Configure your API key
-ai-secure-review setup
+1. Visit Hugging Face (https://huggingface.co/) and create a free account
+2. Go to Settings → Access Tokens
+3. Create a new token with read permissions
 
 Scan your project
-ai-secure-review scan --path ./your-project
+ python cli.py scan --path ./your-project
 
 Generate an HTML report
-ai-secure-review scan --path ./your-project --format html --output report.html
-
+ python cli.py scan --path ./your-project --format html --output report.html
