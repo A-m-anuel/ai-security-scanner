@@ -55,4 +55,6 @@ Thumbs.db
 reports/*.html
 reports/*.pdf
 *.db
-*.sqlite3
+*.sqlite3config/.env
+*.env
+secrets/
