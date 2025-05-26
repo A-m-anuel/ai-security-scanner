@@ -1,4 +1,3 @@
-# core/language_detector.py
 import os
 from pathlib import Path
 from typing import Optional, Dict, List

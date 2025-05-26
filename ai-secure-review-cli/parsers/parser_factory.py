@@ -1,5 +1,4 @@
 
-# parsers/parser_factory.py
 from typing import Optional, List
 from core.models import Language
 from .base_parser import BaseParser

@@ -1,4 +1,3 @@
-# parsers/python_parser.py
 import ast
 import re
 from typing import List, Dict, Any, Optional

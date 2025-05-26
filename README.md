@@ -47,7 +47,7 @@ Get Your API Key (Free)
 3. Create a new token with read permissions
 
 Scan your project
- python cli.py scan --path ./your-project
+ - python cli.py scan --path ./your-project
 
 Generate an HTML report
- python cli.py scan --path ./your-project --format html --output report.html
+ - python cli.py scan --path ./your-project --format html --output report.html

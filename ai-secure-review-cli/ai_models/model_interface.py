@@ -1,4 +1,3 @@
-# ai_models/model_interface.py
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any, Optional
 from core.models import Vulnerability, CodeContext
