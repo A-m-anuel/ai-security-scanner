@@ -20,14 +20,13 @@ Pull Requests
 
 Development Setup
 
-
 Clone your fork
-    - git clone https://github.com/A-m-anuel/ai-security-scanner.git
-    - cd ai-secure-review-cli
+   - git clone https://github.com/A-m-anuel/ai-security-scanner.git
+   - cd ai-secure-review-cli
 
 Create virtual environment
-    - python -m venv venv
-    - source venv/bin/activate  | On Windows: venv\Scripts\activate
+   - python -m venv venv
+   - source venv/bin/activate  | On Windows: venv\Scripts\activate
     
 Install in development mode
    - pip install -e .

@@ -2,7 +2,7 @@ Security Policy
 
 Supported Versions
 
- Only the latest stable release is actively supported with security updates.
+ - Only the latest stable release is actively supported with security updates.
 
 Reporting a Vulnerability
 
